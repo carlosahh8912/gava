@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
     <meta charset="utf-8">
-    <title>Createx | Creative Agency - Home</title>
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- SEO Meta Tags-->
     <meta name="description" content="Createx - Creative Agency Demo">
@@ -15,12 +16,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Favicon and Touch Icons-->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
-    <link rel="manifest" href="assets/img/site.webmanifest">
-    <link rel="mask-icon" color="#5bbad5" href="assets/img/safari-pinned-tab.svg">
+    <link rel="apple-touch-icon" sizes="57x57" href="{{ asset('img/favicon/apple-icon-57x57.png') }}">
+    <link rel="apple-touch-icon" sizes="60x60" href="{{ asset('img/favicon/apple-icon-60x60.png') }}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ asset('img/favicon/apple-icon-72x72.png') }}">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ asset('img/favicon/apple-icon-76x76.png') }}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ asset('img/favicon/apple-icon-114x114.png') }}">
+    <link rel="apple-touch-icon" sizes="120x120" href="{{ asset('img/favicon/apple-icon-120x120.png') }}">
+    <link rel="apple-touch-icon" sizes="144x144" href="{{ asset('img/favicon/apple-icon-144x144.png') }}">
+    <link rel="apple-touch-icon" sizes="152x152" href="{{ asset('img/favicon/apple-icon-152x152.png') }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('img/favicon/apple-icon-180x180.png') }}">
+    <link rel="icon" type="image/png" sizes="192x192"  href="{{ asset('img/favicon/android-icon-192x192.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('img/favicon/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="96x96" href="{{ asset('img/favicon/favicon-96x96.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('img/favicon/favicon-16x16.png') }}">
+    <link rel="manifest" href="{{ asset('img/favicon/manifest.json') }}">
+    {{-- <link rel="manifest" href="assets/img/site.webmanifest"> --}}
     <meta name="msapplication-TileColor" content="#766df4">
+    <meta name="msapplication-TileImage" content="{{ asset('img/favicon//ms-icon-144x144.png') }}">
+    <link rel="mask-icon" color="#5bbad5" href="{{ asset('img/safari-pinned-tab.svg') }}">
     <meta name="theme-color" content="#ffffff">
 
     <!-- Vendor Styles-->
@@ -174,73 +187,68 @@
     <main class="page-wrapper position-relative">
 
 
-        <!-- Demo switcher offcanvas -->
-        <div id="demo-switcher" class="offcanvas offcanvas-end">
+        <!-- App switcher offcanvas -->
+        <div id="app-switcher" class="offcanvas offcanvas-end">
             <div class="offcanvas-header d-block border-bottom">
                 <div class="d-flex justify-content-between align-items-center">
-                    <h2 class="h5 mb-0">Choose Demo</h2>
+                    <h2 class="h5 mb-0">Aplicaciones</h2>
                     <button class="btn-close me-n1" type="button" data-bs-dismiss="offcanvas"
                         aria-label="Close"></button>
                 </div>
-                <div class="d-flex pt-3">
-                    <a href="../index.html" class="btn btn-sm btn-outline-secondary d-block w-100 my-0 me-2">
-                        <i class="ci-home fs-base me-1"></i>
-                        Main Page
-                    </a>
-                    <a href="../components/typography.html" class="btn btn-sm btn-outline-secondary d-block w-100 my-0">
-                        <i class="ci-files fs-base me-1"></i>
-                        Docs / UI Kit
-                    </a>
-                </div>
             </div>
             <div class="offcanvas-body pt-4 pb-3" data-simplebar data-simplebar-auto-hide="true">
-                <a href="../index.html" class="d-block heading-highlight shadow-sm rounded-bottom pb-3 mb-4">
-                    <img src="assets/img/demo-switcher/creative-agency.jpg" class="d-block rounded-top mb-2"
-                        alt="Creative Agency">
-                    <h6 class="mb-0 pt-1 text-center">Creative Agency</h6>
-                </a>
-                <a href="../ecommerce/index.html" class="d-block heading-highlight shadow-sm rounded-bottom pb-3 mb-4">
-                    <img src="assets/img/demo-switcher/ecommerce.jpg" class="d-block rounded-top mb-2" alt="E-Commerce">
-                    <h6 class="mb-0 pt-1 text-center">E-Commerce</h6>
-                </a>
-                <a href="../construction/index.html"
-                    class="d-block heading-highlight shadow-sm rounded-bottom pb-3 mb-4">
-                    <img src="assets/img/demo-switcher/construction.jpg" class="d-block rounded-top mb-2"
-                        alt="Construction Bureau">
-                    <h6 class="mb-0 pt-1 text-center">Construction Bureau</h6>
-                </a>
-                <a href="../seo-agency/index.html" class="d-block heading-highlight shadow-sm rounded-bottom pb-3 mb-4">
-                    <img src="assets/img/demo-switcher/seo-agency.jpg" class="d-block rounded-top mb-2"
-                        alt="SEO & Marketing Agency">
-                    <h6 class="mb-0 pt-1 text-center">SEO &amp; Marketing Agency</h6>
-                </a>
-                <a href="../online-courses/index.html"
-                    class="d-block heading-highlight shadow-sm rounded-bottom pb-3 mb-4">
-                    <img src="assets/img/demo-switcher/online-courses.jpg" class="d-block rounded-top mb-2"
-                        alt="Online Courses">
-                    <h6 class="mb-0 pt-1 text-center">Online Courses</h6>
-                </a>
-            </div>
-            <div class="offcanvas-footer flex-column border-top">
-                <a href="https://themes.getbootstrap.com/product/createx-multipurpose-template-ui-kit/"
-                    class="btn btn-primary d-block w-100" target="_blank" rel="noopener">
-                    <i class="ci-cart mt-n1 me-2"></i>
-                    Buy Createx
-                </a>
+
+                <div class="card border-0 shadow card-hover text-center mb-3">
+                    <a href="#">
+                        <div class="card-body">
+                            <i class="ci-cart fs-2"></i>
+                            <h3 class="h5 mb-2">Tienda</h3>
+                        </div>
+                    </a>
+
+                </div>
+
+                <div class="card border-0 shadow card-hover text-center mb-3">
+                    <a href="#">
+                        <div class="card-body">
+                            <i class="ci-wallet fs-2"></i>
+                            <h3 class="h5 mb-2">B2B</h3>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="card border-0 shadow card-hover text-center mb-3">
+                    <a href="#">
+                        <div class="card-body">
+                            <i class="ci-truck fs-2"></i>
+                            <h3 class="h5 mb-2">Dropshipping</h3>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="card border-0 shadow card-hover text-center mb-3">
+                    <a href="{{ route('panel') }}">
+                        <div class="card-body">
+                            <i class="ci-grid fs-2"></i>
+                            <h3 class="h5 mb-2">Panel</h3>
+                        </div>
+                    </a>
+                </div>
+                
             </div>
         </div>
 
 
         <!-- Demo switcher offcanvas toggle -->
-        <a href="#demo-switcher" class="demo-switcher" data-bs-toggle="offcanvas">
-            <div class="demo-switcher-inner" data-bs-toggle="tooltip" data-bs-placement="left" title="Choose Demo">
+        <a href="#app-switcher" class="demo-switcher" data-bs-toggle="offcanvas">
+            <div class="demo-switcher-inner" data-bs-toggle="tooltip" data-bs-placement="left" title="Gava apps">
                 <i class="ci-layouts"></i>
             </div>
         </a>
 
 
         <!-- Navbar -->
-        <x-nav-main/>
+        <x-nav-main />
 
         {{ $slot }}
 
