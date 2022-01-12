@@ -23,6 +23,6 @@ Route::get('nosotros', function () {
 
 
 
-Route::get('panel', function () {
+Route::middleware(['auth:sanctum', 'verified'])->get('panel', function () {
     return view('panel.dashboard');
 })->name('panel');

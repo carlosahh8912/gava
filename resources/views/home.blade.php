@@ -76,17 +76,14 @@
             <div class="col-lg-5 col-md-6 overflow-hidden">
                 <div class="d-flex justify-content-md-end flex-sm-nowrap flex-wrap mx-n4">
                     <div class="mb-sm-0 mb-4 px-4">
-                        <span class="d-inline-block pb-1 fs-sm text-dark text-nowrap">Kikkerland</span>
                         <img class="d-block mt-md-3 mt-2" src="{{ asset('img/brands/kikkerland.webp') }}" width="500"
                             alt="kikkerland_logo">
                     </div>
                     <div class="mb-sm-0 mb-4 px-4">
-                        <span class="d-inline-block pb-1 fs-sm text-dark text-nowrap">Ooly</span>
                         <img class="d-block mt-md-3 mt-2" src="{{ asset('img/brands/ooly.webp') }}" width="350"
                             alt="ooly_logo">
                     </div>
                     <div class="mb-sm-0 mb-4 px-4">
-                        <span class="d-inline-block pb-1 fs-sm text-dark text-nowrap">Doiy</span>
                         <img class="d-block mt-md-3 mt-2" src="{{ asset('img/brands/doiy.webp') }}" width="350"
                             alt="doiy_logo">
                     </div>
@@ -95,10 +92,77 @@
         </div>
     </section>
 
+
+
+    <section id="services" class="container mt-5 py-3 pb-lg-0 pt-md-5 pt-lg-4">
+            <h3 class="h6 mb-2 text-uppercase">Nuestro trabajo</h3>
+            <div class="row align-items-end mb-lg-5 mb-4">
+                <div class="col-lg">
+                    <h2 class="h1 mb-lg-0 mb-md-3 mb-2">Gava Design</h2>
+                </div>
+            </div>
+    
+            <!-- Filterable grid of items -->
+            <div class="row" style="">
+
+                <div class="grid-item branding col-md-8 pb-lg-2 mb-4" style="">
+                    <a class="portfolio-card-scale" href="portfolio-single-v1.html">
+                        <div class="portfolio-card-img">
+                            <img src="{{ asset('img/blog/CRITTERS-WEB-BANNER.jpg') }}" alt="Card image">
+                        </div>
+                        <div class="portfolio-card-body">
+                            <h3 class="portfolio-card-title">#GavaDesign</h3>
+                            <span class="fs-sm text-muted">HACEMOS LLEGAR A TU TIENDA ARTÍCULOS, REGALOS Y EMOCIONES LLENOS DE INNOVACIÓN Y DIVERSIÓN.</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="grid-item video-production col-md-4 col-sm-6 pb-lg-2 mb-4" style="">
+                    <a class="portfolio-card-scale portfolio-card-video" href="#">
+                        <div class="portfolio-card-img">
+                            <img src="{{ asset('img/products/MH02_c.jpg') }}" alt="Card image">
+                        </div>
+                        <div class="portfolio-card-body">
+                            <h3 class="portfolio-card-title">#tuespacio</h3>
+                            <span class="fs-sm text-muted">POR QUE EL TIEMPO QUE SE DISFRUTA, ES EL VERDADERO TIEMPO VIVIDO. DISFRUTA TU TIEMPO Y TU ESPACIO CON GAVA DESIGN.</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="grid-item web-design col-md-4 col-sm-6 pb-lg-2 mb-4" style="">
+                    <a class="portfolio-card-scale" href="portfolio-single-v1.html">
+                        <div class="portfolio-card-img">
+                            <img src="{{ asset('img/products/MH02_c.jpg') }}" alt="Card image">
+                        </div>
+                        <div class="portfolio-card-body">
+                            <h3 class="portfolio-card-title">#beunique, #regalosoriginales</h3>
+                            <span class="fs-sm text-muted">SE UN UNICORNIO EN UN CAMPO DE CABALLOS. ENCUENTRA LOS OBJETOS MAS ORIGINALES Y ÚNICOS EN GAVA DESIGN.</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="grid-item branding col-md-8 pb-lg-2 mb-4" style="">
+                    <a class="portfolio-card-scale" href="portfolio-single-v2.html">
+                        <div class="portfolio-card-img">
+                            <img src="{{ asset('img/blog/CRITTERS-WEB-BANNER.jpg') }}" alt="Card image">
+                        </div>
+                        <div class="portfolio-card-body">
+                            <h3 class="portfolio-card-title">Striped Smooth Surface With Lines</h3>
+                            <span class="fs-sm text-muted">Branding</span>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+    </section>
+
+
+
+
     <!-- Services -->
     <section class="container py-lg-6 mb-md-3 mb-lg-0 py-5">
-        <h3 class="h6 mb-2 text-uppercase">Capabilities</h3>
-        <h2 class="h1 mb-lg-4 mb-2 pb-3">Our services</h2>
+        <h3 class="h6 mb-2 text-uppercase">Nuestras</h3>
+        <h2 class="h1 mb-lg-4 mb-2 pb-3">Marcas</h2>
         <div class="row align-items-center">
             <div class="col-md-5 order-md-1 order-2">
 
@@ -109,16 +173,12 @@
                     <div class="accordion-item">
                         <h3 class="accordion-header" id="servicesHeading-1">
                             <button class="accordion-button border-0" type="button" data-bs-toggle="collapse"
-                                data-binded-content="#identity" data-bs-target="#servicesCollapse-1"
-                                aria-expanded="true" aria-controls="servicesCollapse-1">Identity Design &amp;
-                                Illustration</button>
+                                data-binded-content="#kikkerland" data-bs-target="#servicesCollapse-1"
+                                aria-expanded="true" aria-controls="servicesCollapse-1">Kikkerland</button>
                         </h3>
                         <div class="accordion-collapse border-0 collapse show" id="servicesCollapse-1"
                             aria-labelledby="servicesHeading-1" data-bs-parent="#accordionServices">
-                            <div class="accordion-body">At vero eos et accusamus et iusto odio dignissimos ducimus
-                                qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas
-                                molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa
-                                qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</div>
+                            <div class="accordion-body">Desde 1992, la gente de Kikkerland ha viajado por todo el mundo en busca de diseños originales para las cosas que pueden hacer la vida más disfrutable, cosas ingeniosas que te intriguen; cosas inteligentes que hacen más fácil las actividades del diario; y cosas agradables que te hagan sentir más feliz cuando las uses.</div>
                         </div>
                     </div>
 
@@ -126,16 +186,12 @@
                     <div class="accordion-item">
                         <h3 class="accordion-header" id="servicesHeading-2">
                             <button class="accordion-button border-0 collapsed" type="button" data-bs-toggle="collapse"
-                                data-binded-content="#web" data-bs-target="#servicesCollapse-2" aria-expanded="false"
-                                aria-controls="servicesCollapse-2">UX / UI Design<br>Web &amp; Mobile
-                                Design</button>
+                                data-binded-content="#ooly" data-bs-target="#servicesCollapse-2" aria-expanded="false"
+                                aria-controls="servicesCollapse-2">Ooly</button>
                         </h3>
                         <div class="accordion-collapse border-0 collapse" id="servicesCollapse-2"
                             aria-labelledby="servicesHeading-2" data-bs-parent="#accordionServices">
-                            <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Inventore porro molestiae nihil ad aut atque tempora tempore fugiat ipsum aspernatur
-                                officiis, obcaecati modi excepturi, aliquid reprehenderit? Sint ullam magni
-                                molestias?</div>
+                            <div class="accordion-body">OOLY nació desde 2005, han estado soñando con todo tipo de productos coloridos, frescos e inspiradores llenos de deleite inesperado. Cosas seriamente divertidas para hacer que tu espacio de arte, espacio creativo, espacio escolar o espacio de oficina sea más divertido. Sea cual sea el espacio en el que se encuentre, seguramente encontrará algo especial para despertar tu creatividad y expresarse ante el mundo.</div>
                         </div>
                     </div>
 
@@ -143,16 +199,25 @@
                     <div class="accordion-item">
                         <h3 class="accordion-header" id="servicesHeading-3">
                             <button class="accordion-button border-0 collapsed" type="button" data-bs-toggle="collapse"
-                                data-binded-content="#photography" data-bs-target="#servicesCollapse-3"
-                                aria-expanded="false" aria-controls="servicesCollapse-3">Photography &amp; Video
-                                Production</button>
+                                data-binded-content="#doiy" data-bs-target="#servicesCollapse-3"
+                                aria-expanded="false" aria-controls="servicesCollapse-3">Doiy</button>
                         </h3>
                         <div class="accordion-collapse border-0 collapse" id="servicesCollapse-3"
                             aria-labelledby="servicesHeading-3" data-bs-parent="#accordionServices">
-                            <div class="accordion-body">Doloribus quo sed beatae provident placeat voluptate
-                                corporis eligendi maxime laborum reprehenderit voluptatibus obcaecati recusandae
-                                illum, delectus ipsum ab vitae cum excepturi? Illo ad id mollitia, sit obcaecati qui
-                                laborum iste minima deserunt consequatur sunt neque aliquid, error aspernatur!</div>
+                            <div class="accordion-body">DOIY es creatividad, sorpresa, pasión y mucha ilusión. DOIY es diseño, diseño para compartir, para reír, para sorprender y sobre todo diseño para todos. DOIY es una marca joven que crea productos de calidad, sin que esto sea sinónimo de precios elevados.</div>
+                        </div>
+                    </div>
+
+                    <!-- Item -->
+                    <div class="accordion-item">
+                        <h3 class="accordion-header" id="servicesHeading-4">
+                            <button class="accordion-button border-0 collapsed" type="button" data-bs-toggle="collapse"
+                                data-binded-content="#flipper" data-bs-target="#servicesCollapse-4"
+                                aria-expanded="false" aria-controls="servicesCollapse-4">Flipper</button>
+                        </h3>
+                        <div class="accordion-collapse border-0 collapse" id="servicesCollapse-4"
+                            aria-labelledby="servicesHeading-4" data-bs-parent="#accordionServices">
+                            <div class="accordion-body">Flipper, Haz del cepillado algo divertido, las cubiertas protectoras para cepillos de dientes de Flipper hacen el tiempo de cepillado mas divertido, manteniendo tu cepillo libre de gérmenes, polvo e insectos.</div>
                         </div>
                     </div>
                 </div>
@@ -161,17 +226,22 @@
 
                 <!-- Images binded to accordion -->
                 <div class="binded-content mb-4">
-                    <div id="identity" class="binded-item active">
-                        <img class="d-block" src="{{ asset('img/home/services/01.svg') }}"
-                            alt="Identity Design &amp; Illustration">
+                    <div id="kikkerland" class="binded-item active">
+                        <img class="d-block" src="{{ asset('img/brands/kikkerland.webp') }}"
+                            alt="kikkerland">
                     </div>
-                    <div id="web" class="binded-item">
-                        <img class="d-block" src="{{ asset('img/home/services/02.svg') }}"
-                            alt="UX / UI Design">
+                    <div id="ooly" class="binded-item">
+                        <img class="d-block" src="{{ asset('img/brands/ooly.webp') }}"
+                            alt="ooly" width="550">
                     </div>
-                    <div id="photography" class="binded-item">
-                        <img class="d-block" src="{{ asset('img/home/services/03.svg') }}"
-                            alt="Photography &amp; Video Production">
+                    <div id="doiy" class="binded-item">
+                        <img class="d-block" src="{{ asset('img/brands/doiy.webp') }}"
+                            alt="doiy" width="550">
+                    </div>
+
+                    <div id="flipper" class="binded-item">
+                        <img class="d-block" src="{{ asset('img/brands/flipper.webp') }}"
+                            alt="flipper">
                     </div>
                 </div>
             </div>
@@ -185,7 +255,8 @@
             <h3 class="h6 mb-2 text-uppercase">Enjoy our latest projects</h3>
             <div class="mb-lg-5 mb-4 d-flex justify-content-between">
                 <h2 class="h1 mb-0">Selected work</h2>
-                <div class="tns-custom-controls tns-controls-inverse mb-md-n4" id="tns-portfolio-controls" tabindex="0">
+                <div class="tns-custom-controls tns-controls-inverse mb-md-n4" id="tns-portfolio-controls"
+                    tabindex="0">
                     <button type="button" data-controls="prev" tabindex="-1">
                         <i class="ci-arrow-left"></i>
                     </button>
@@ -272,27 +343,30 @@
         <div class="row">
             <div class="jarallax bg-dark py-5 mb-5" data-jarallax data-speed="0.3">
                 <span class="bg-overlay opacity-25"></span>
-                <div class="jarallax-img" style="background-image: url({{ asset('img/portfolio/novedades.jpg') }});"></div>
+                <div class="jarallax-img"
+                    style="background-image: url({{ asset('img/portfolio/novedades.jpg') }});"></div>
                 <div class="container bg-overlay-content py-sm-5 text-center">
                     <h2 class="h1 my-5 text-light">Novedades {{ date('Y') }}</h2>
                 </div>
             </div>
             <div class="jarallax bg-dark py-5 mb-5" data-jarallax data-speed="0.3">
                 <span class="bg-overlay opacity-25"></span>
-                <div class="jarallax-img" style="background-image: url({{ asset('img/portfolio/topsellers.jpg') }});"></div>
+                <div class="jarallax-img"
+                    style="background-image: url({{ asset('img/portfolio/topsellers.jpg') }});"></div>
                 <div class="container bg-overlay-content py-sm-5 text-center">
                     <h2 class="h1 my-5 text-light">Top sellers</h2>
                 </div>
             </div>
             <div class="jarallax bg-dark py-5 mb-5" data-jarallax data-speed="0.3">
                 <span class="bg-overlay opacity-25"></span>
-                <div class="jarallax-img" style="background-image: url({{ asset('img/portfolio/lastchance.jpg') }});"></div>
+                <div class="jarallax-img"
+                    style="background-image: url({{ asset('img/portfolio/lastchance.jpg') }});"></div>
                 <div class="container bg-overlay-content py-sm-5 text-center">
                     <h2 class="h1 my-5 text-light">Last chance {{ date('Y') }}</h2>
                 </div>
             </div>
         </div>
-        
+
     </section>
 
 
